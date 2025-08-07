@@ -1,0 +1,29 @@
+## 🚀 How It Works
+
+1. **Terraform is initialized** using `terraform init`.
+2. It uses the **Docker provider** to:
+   - Pull the official `nginx:latest` Docker image.
+   - Create and run a container named `nginx_container` on port `8080 → 80`.
+3. Verify container is running with `docker ps`.
+4. Optional: Open the instance IP on port `8080` in the browser to view the Nginx welcome page.
+5. Infrastructure can be destroyed using `terraform destroy`.
+
+---
+
+## ✅ Commands Used
+
+```bash
+# Initialize Terraform
+terraform init
+
+# Review execution plan
+terraform plan
+
+# Apply configuration
+terraform apply
+
+# Check Docker container
+docker ps
+
+# Destroy infrastructure
+terraform destroy
